@@ -8,89 +8,89 @@
 </head>
 <body>
     <div class="wrapper">
-    <section>
-        <h2>Catalog</h2>
-        <ul>
-            <li><a href="">Страна</a></li>
-            <li><a href="">Наименование</a></li>
-            <li><a href="">Цена</a></li>
-            <li>
-                <select>
-                    <option disabled selected>Фильтр</option>
-                    <option value="Все">Все</option>
-                    <option value="Букеты">Букеты</option>
-                    <option value="Упаковки">Упаковки</option>
-                    <option value="Цветы">Цветы</option>
-                </select>
-            </li>
-        </ul>
-        <div class="container">
-            <article data-type="Букеты">
-                <img src="images/whitel.jpg" alt="">
-                <a href=""><h3>Букет тюльпанов</h3></a>
-                <p>Цена <span>500$</span></p>
-                <p>Страна <span>Россия</span></p>
-                <p>Тип <span>Букеты</span></p>
-            </article>
-            <article data-type="Цветы">
-                <img src="images/whitel.jpg" alt="">
-                <a href=""><h3>Роза</h3></a>
-                <p>Цена <span>25$</span></p>
-                <p>Страна <span>Россия</span></p>
-                <p>Тип <span>Цветы</span></p>
-            </article>
-            <article data-type="Цветы">
-                <img src="images/whitel.jpg" alt="">
-                <a href=""><h3>Веточка мимозы</h3></a>
-                <p>Цена <span>15$</span></p>
-                <p>Страна <span>Индия</span></p>
-                <p>Тип <span>Цветы</span></p>
-            </article>
-            <article data-type="Упаковки">
-                <img src="images/whitel.jpg" alt="">
-                <a href=""><h3>Упаковка с ромашками</h3></a>
-                <p>Цена <span>350$</span></p>
-                <p>Страна <span>Казахстан</span></p>
-                <p>Тип <span>Упаковки</span></p>
-            </article>
-            <article data-type="Букеты">
-                <img src="images/whitel.jpg" alt="">
-                <a href=""><h3>Букет пионов</h3></a>
-                <p>Цена <span>280$</span></p>
-                <p>Страна <span>Китай</span></p>
-                <p>Тип <span>Букеты</span></p>
-            </article>
-            <article data-type="Цветы">
-                <img src="images/whitel.jpg" alt="">
-                <a href=""><h3>Лаванда</h3></a>
-                <p>Цена <span>20$</span></p>
-                <p>Страна <span>Франция</span></p>
-                <p>Тип <span>Цветы</span></p>
-            </article>
-            <article data-type="Цветы">
-                <img src="images/whitel.jpg" alt="">
-                <a href=""><h3>Букет нарциссов</h3></a>
-                <p>Цена <span>200$</span></p>
-                <p>Страна <span>Великобритания</span></p>
-                <p>Тип <span>Цветы</span></p>
-            </article>
-            <article data-type="Упаковки">
-                <img src="images/whitel.jpg" alt="">
-                <a href=""><h3>Упаковка с маками</h3></a>
-                <p>Цена <span>400$</span></p>
-                <p>Страна <span>Испания</span></p>
-                <p>Тип <span>Упаковки</span></p>
-            </article>
-            <article data-type="Упаковки">
-                <img src="images/whitel.jpg" alt="">
-                <a href=""><h3>Упаковка с лотосами</h3></a>
-                <p>Цена <span>550$</span></p>
-                <p>Страна <span>Египет</span></p>
-                <p>Тип <span>Упаковки</span></p>
-            </article>
+        <section>
+            <h2>Catalog</h2>
+            <ul>
+                <li><a href="" onclick="sortCountry(event)">Страна</a></li>
+                <li><a href="" onclick="sortName(event)">Наименование</a></li>
+                <li><a href="" onclick="sortPrice(event)">Цена</a></li>
+                <li>
+                    <select>
+                        <option disabled selected>Фильтр</option>
+                        <option value="Все">Все</option>
+                        <option value="Букеты">Букеты</option>
+                        <option value="Упаковки">Упаковки</option>
+                        <option value="Цветы">Цветы</option>
+                    </select>
+                </li>
+            </ul>
+            <div class="container">
+                <article data-type="Букеты" data-price="500" data-country="Россия" data-name="Тюльпан">
+                    <img src="images/whitel.jpg" alt="">
+                    <a href=""><h3>Букет тюльпанов</h3></a>
+                    <p>Цена <span>500$</span></p>
+                    <p>Страна <span>Россия</span></p>
+                    <p>Тип <span>Букеты</span></p>
+                </article>
+                <article data-type="Цветы" data-price="25" data-country="Россия" data-name="Роза">
+                    <img src="images/whitel.jpg" alt="">
+                    <a href=""><h3>Роза</h3></a>
+                    <p>Цена <span>25$</span></p>
+                    <p>Страна <span>Россия</span></p>
+                    <p>Тип <span>Цветы</span></p>
+                </article>
+                <article data-type="Цветы" data-price="15" data-country="Индия" data-name="Мимозы">
+                    <img src="images/whitel.jpg" alt="">
+                    <a href=""><h3>Веточка мимозы</h3></a>
+                    <p>Цена <span>15$</span></p>
+                    <p>Страна <span>Индия</span></p>
+                    <p>Тип <span>Цветы</span></p>
+                </article>
+                <article data-type="Упаковки" data-price="350" data-country="Казахстан" data-name="Ромашка">
+                    <img src="images/whitel.jpg" alt="">
+                    <a href=""><h3>Упаковка с ромашками</h3></a>
+                    <p>Цена <span>350$</span></p>
+                    <p>Страна <span>Казахстан</span></p>
+                    <p>Тип <span>Упаковки</span></p>
+                </article>
+                <article data-type="Букеты" data-price="280" data-country="Китай" data-name="Пион">
+                    <img src="images/whitel.jpg" alt="">
+                    <a href=""><h3>Букет пионов</h3></a>
+                    <p>Цена <span>280$</span></p>
+                    <p>Страна <span>Китай</span></p>
+                    <p>Тип <span>Букеты</span></p>
+                </article>
+                <article data-type="Цветы" data-price="20" data-country="Франция" data-name="Лаванда">
+                    <img src="images/whitel.jpg" alt="">
+                    <a href=""><h3>Лаванда</h3></a>
+                    <p>Цена <span>20$</span></p>
+                    <p>Страна <span>Франция</span></p>
+                    <p>Тип <span>Цветы</span></p>
+                </article>
+                <article data-type="Букеты" data-price="200" data-country="Великобритания" data-name="Нарцисс">
+                    <img src="images/whitel.jpg" alt="">
+                    <a href=""><h3>Букет нарциссов</h3></a>
+                    <p>Цена <span>200$</span></p>
+                    <p>Страна <span>Великобритания</span></p>
+                    <p>Тип <span>Букеты</span></p>
+                </article>
+                <article data-type="Упаковки" data-price="400" data-country="Испания" data-name="Мак">
+                    <img src="images/whitel.jpg" alt="">
+                    <a href=""><h3>Упаковка с маками</h3></a>
+                    <p>Цена <span>400$</span></p>
+                    <p>Страна <span>Испания</span></p>
+                    <p>Тип <span>Упаковки</span></p>
+                </article>
+                <article data-type="Упаковки" data-price="550" data-country="Египет" data-name="Лотос">
+                    <img src="images/whitel.jpg" alt="">
+                    <a href=""><h3>Упаковка с лотосами</h3></a>
+                    <p>Цена <span>550$</span></p>
+                    <p>Страна <span>Египет</span></p>
+                    <p>Тип <span>Упаковки</span></p>
+                </article>
+            </div>
+        </section>
         </div>
-    </section>
-    </div>
     <script src="js/app.js"></script>
 </body>
 </html>
